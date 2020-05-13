@@ -1,0 +1,9 @@
+controllers:
+    resource: ../../src/Presentation/Controller/Api/
+    type: annotation
+    name_prefix: api_
+    prefix: /api
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation

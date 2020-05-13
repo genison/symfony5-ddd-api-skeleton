@@ -1,0 +1,23 @@
+App\Domain\Model\User:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+            groups: [Basic]
+
+        username:
+            expose: true
+            groups: [Basic]
+
+        email:
+            expose: true
+            groups: [Basic]
+
+        password:
+            expose: true
+            groups: [Basic]
+
+        createdAt:
+            expose: true
+            groups: [Basic]
+            type: DateTimeImmutable

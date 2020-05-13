@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+    <entity name="App\Domain\Model\User"
+            repository-class="App\Infrastructure\Repository\UserRepository"
+            table="user">
+
+        <id name="id" type="integer" column="id">
+            <generator strategy="IDENTITY"/>
+        </id>
+        <field name="username" column="username" type="string" unique="true" length="100"/>
+        <field name="email" column="email" type="string" unique="true" length="150"/>
+        <field name="password" column="password" type="string" length="255"/>
+        <field name="createdAt" column="created_at" type="date_immutable"/>
+
+        <indexes>
+            <index name="email_idx" columns="email"/>
+            <index name="username_idx" columns="username"/>
+        </indexes>
+
+        <unique-constraints>
+            <unique-constraint columns="username,email" name="unique_idx"/>
+        </unique-constraints>
+    </entity>
+</doctrine-mapping>
