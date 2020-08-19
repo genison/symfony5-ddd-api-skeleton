@@ -24,7 +24,7 @@ $ composer install
 Start server for dev.
 
 ```sh
-$ php bin/console server:run
+$ symfony server:start
 ```
 
 Verify the deployment by navigating to your server address in your preferred browser.
