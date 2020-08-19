@@ -24,6 +24,7 @@ $ composer install
 Start server for dev.
 
 ```sh
+$ php bin/console asset:install (first run)
 $ symfony server:start
 ```
 
