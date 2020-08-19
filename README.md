@@ -7,7 +7,7 @@ For the installation of the project it is necessary to follow the following step
 Cloning the project.
 
 ```sh
-$ git clone https://gitlab.com/thomas.matheus60/sf4-ddd-skeleton.git
+$ git clone git@github.com:genison/symfony5-ddd-api-skeleton.git
 ```
 
 ---
@@ -15,7 +15,7 @@ $ git clone https://gitlab.com/thomas.matheus60/sf4-ddd-skeleton.git
 Install the dependencies 
 
 ```sh
-$ cd sf4-ddd-skeleton
+$ cd sf5-ddd-skeleton
 $ composer install
 ```
 
