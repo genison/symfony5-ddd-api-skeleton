@@ -15,7 +15,7 @@ $ git clone git@github.com:genison/symfony5-ddd-api-skeleton.git
 Install the dependencies 
 
 ```sh
-$ cd sf5-ddd-skeleton
+$ cd symfony5-ddd-api-skeleton
 $ composer install
 ```
 
